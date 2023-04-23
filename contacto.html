@@ -1,74 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contactanos</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="icon" href="imagenes/icons8-libro-others-96.png">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-</head>
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="imagenes/icons8-libro-others-96.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    
+  </head>
 
-<body>
+  <body>
     <header>
-        <a href="index.html">Ir al inicio</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="contacto.html">Contáctanos</a>
-        <a href="faq.html">Preguntas frecuentes</a>
+      <a href="index.html">Ir al inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="contacto.html">Contáctanos</a>
+      <a href="faq.html">Preguntas frecuentes</a>
     </header>
     <h1>Contacta con nosotros!</h1>
-    <form>
+    <span class="formulario">
+      <form method="post" action="">
         <div class="campo">
-            <label for="nombre">Nombre:</label>
+          <label for="nombre">Nombre:</label>
         </div>
-        <input type="text" id="nombre" name="nombre" required>
-        <br><br>
+        <input type="text" id="nombre" name="nombre" required />
+        <br /><br />
         <div class="campo">
-            <label for="correo">E-mail:</label>
+          <label for="correo">E-mail:</label>
         </div>
-        <input type="email" id="correo" name="correo" required>
-        <br><br>
+        <input type="email" id="correo" name="correo" required />
+        <br /><br />
         <div class="campo">
-            <label for="telefono">Teléfono:</label>
+          <label for="telefono">Teléfono:</label>
         </div>
-        <input type="telefono" id="telefono" name="telefono">
-        <br><br>
+        <input type="tel" id="telefono" name="telefono" />
+        <br /><br />
         <div class="campo">
-            <label for="Motivo">Motivo:</label>
+          <label for="motivo">Motivo:</label>
         </div>
         <select name="Motivo">
-            <option>-</option>
-            <option>Compras</option>
-            <option>Envios</option>
-            <option>Otros</option>
+          <option>-</option>
+          <option>Compras</option>
+          <option>Envios</option>
+          <option>Otros</option>
         </select>
-        <br><br>
+        <br /><br />
         <div class="campo">
-            <label for="mensaje">Mensaje:</label>
+          <label for="mensaje">Mensaje:</label>
         </div>
-        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba su mensaje..." required></textarea>
-        <br><br>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="5"
+          placeholder="Escriba su mensaje..."
+          required
+        ></textarea>
+        <br /><br />
         <div class="boton">
-            <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" />
         </div>
-    </form>
-    <h2>¿Donde estamos?</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, repellendus!</p>
-    <br>
-    <div class="mapa">
+      </form>
+    </span>
+    <h2>¿Dónde estamos?</h2>
+    <span class="ubicacion">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+        repellendus!
+      </p>
+      <br />
+      <div class="mapa">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888190769!2d-58.384150687873024!3d-34.60373445738765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1682042725100!5m2!1ses-419!2sar"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888190769!2d-58.384150687873024!3d-34.60373445738765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1682042725100!5m2!1ses-419!2sar"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </span>
     <footer>
-        <button onclick="topFunction()" id="boton-arriba" title="Ir arriba">↑</button>
+      Lucas
     </footer>
-</body>
-
+  </body>
 </html>
