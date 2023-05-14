@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logia libros - Contacto</title>
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONT ROBOTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+        <link href="css/reset.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap">
+        <script src="https://kit.fontawesome.com/578634473c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <body>
+        <header class="head_container">
+            <img class="head_logo" src="imagenes/logo.jpg" alt="Logo de Logia Comics">
+            <nav class="head_navegacion">
+                <ul class="head_lista">
+                    <li class="menu home"><a href="index.html">Home</a></li>
+                    <li class="menu"><a href="catalogo.html">Catálogo</a></li>
+                    <li class="menu"><a href="contacto.html">Contacto</a></li>
+                    <li class="menu"><a href="faq.html">FAQ</a></li>
+                    <li class="icono"><a href="#"><i class="material-icons">search</i></a></li>
+                    <li class="icono"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <br>
+        <br>
+        <!--CONTACTO-->
+        <div class="form-contenedor">
+            <div class="formulario">
+                <h2 class="form-titulo">Contacta con nosotros!</h2>
+                <form method="post" action="">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="tel" id="tel">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="motivo">Motivo:</label>
+                    <select name="motivo" id="motivo">
+                        <option value="">-</option>
+                        <option value="">Compras</option>
+                        <option value="">Envios</option>
+                        <option value="">Otros</option>
+                    </select>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escriba su mensaje..."
+                        required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <!--UBICACION-->
+        <div class="ubicacion">
+            <h2>¿Dónde estamos?</h2>
+            <p style="font-size: 20px;">
+                <i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+                    repellendus!</i>
+            </p>
+            <br />
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888190769!2d-58.384150687873024!3d-34.60373445738765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1682042725100!5m2!1ses-419!2sar"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <img class="footer_logo" src="imagenes/logo.jpg">
+        <p class="comit">Traemos libros, cómics y mangas nuevos e importados a pedido</p>
+        <p class="copyright">Copywrite LogiaLibros Comics - 2023</p>
+        <span style="font-size: 48px; color: Dodgerblue;">
+            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+        </span>
+        <span style="font-size: 48px; color: rgb(0, 0, 0);">
+            <a href="https://www.instagram.com/logialibros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+    </footer>
+</body>
+
+</html>
