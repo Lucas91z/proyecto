@@ -9,14 +9,14 @@
     <!--FONT AWESOME-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!--FONT ROBOTO-->
-    <link href="https://fonts.googleapis.com" rel="preconnect" >
-    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect"> 
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
         rel="stylesheet">
     <!--CSS-->
     <link href="css/reset.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" >
+    <link href="styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap">
     <script src="https://kit.fontawesome.com/578634473c.js" crossorigin="anonymous"></script>
@@ -36,7 +36,7 @@
             </ul>
         </nav>
     </header>
-        <!--BIENVENIDA-->
+    <!--BIENVENIDA-->
     <main>
         <section class="bienvenida">
             <h2>Bienvenidos!</h2>
@@ -54,27 +54,31 @@
                 Vel commodi itaque odio iste repellat aperiam qui minima, nostrum vitae veritatis inventore unde illo,
                 ipsam alias eius quae, reprehenderit amet aspernatur delectus consequuntur? Eum quidem vero excepturi
                 perspiciatis quibusdam!</p>
-            </section>
+        </section>
         <hr>
         <!---LIBROS-->
-        <h2>Buscá tu libro favorito</h2>
-        <div class="libros">
-            <div>
-                <img src="imagenes/hp1.jpg" alt="HP1">
-                <h3>Harry Potter y la piedra filosofal</h3>
+
+        <section class="libros">
+            <div class="busca">
+                <h2>Buscá tu libro favorito</h2>
                 <a href="catalogo.html" class="boton"> Ver más <i class="fas fa-angle-double-right"></i></a>
             </div>
-            <div>
-                <img src="imagenes/hp2.jpg" alt="HP2">
-                <h3>Harry Potter y la camara secreta</h3>
-                <a href="catalogo.html" class="boton"> Ver más <i class="fas fa-angle-double-right"></i></a>
+            
+            <div class="grid-container">
+                <div class="grid-item1">
+                    <img src="imagenes/hp1.jpg" alt="HP1">
+                    <h3>Harry Potter y la piedra filosofal</h3>
+                </div>
+                <div class="grid-item2">
+                    <img src="imagenes/hp2.jpg" alt="HP2">
+                    <h3>Harry Potter y la camara secreta</h3>
+                </div>
+                <div class="grid-item3">
+                    <img src="imagenes/hp3.jpg" alt="HP3">
+                    <h3>Harry Potter y el prisionero de Azkaban</h3>
+                </div>
             </div>
-            <div>
-                <img src="imagenes/hp3.jpg" alt="HP3">
-                <h3>Harry Potter y el prisionero de Azkaban</h3>
-                <a href="catalogo.html" class="boton"> Ver más <i class="fas fa-angle-double-right"></i></a>
-            </div>
-        </div>
+        </section>
         <hr>
         <!--CONTACTO-->
         <section class="tarjeta-contacto">
@@ -87,7 +91,8 @@
         <p class="comit">Traemos libros, cómics y mangas nuevos e importados a pedido</p>
         <p class="copyright">Copywrite LogiaLibros Comics - 2023</p>
         <span style="font-size: 48px; color: Dodgerblue;">
-            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i
+                    class="fa-brands fa-square-facebook "></i></a>
         </span>
         <span style="font-size: 48px; color: rgb(0, 0, 0);">
             <a href="https://www.instagram.com/logialibros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
