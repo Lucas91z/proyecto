@@ -5,54 +5,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logia libros - Catálogo</title>
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Logia Libros - Catálogo</title>
+    <!--FONTS AWESOME-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!--FONT ROBOTO-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
         rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet"> 
+    
 </head>
 
 <body>
-    <div class="contenedor">
-        <!--NAVEGACION-->
-        <nav class="nav-main">
-            <img src="img/logo.logia.png" alt="Logia logo" class="nav-logo">
-            <ul class="nav-menu">
-                <li>
-                    <a href="indexlibreria.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="catalogo.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-            </ul>
-            <ul class="nav-busca">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li>
+    <header class="head_container">
+        <img class="head_logo" src="imagenes/logo.jpg" alt="Logo de Logia Comics">
+        <nav class="head_navegacion">
+            <ul class="head_lista">
+                <li class="menu home"><a href="index.html">Home</a></li>
+                <li class="menu"><a href="catalogo.html">Catálogo</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+                <li class="menu"><a href="faq.html">FAQ</a></li>
+                <li class="icono"><a href="#"><i class="fas fa-solid fa-regular fa-magnifying-glass"></i></a></li>
+                <li class="icono"><a href="#"><i class="fas fa-solid fa-regular fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
-        <hr>
-        <!--CATALOGO-->
-    </div>
-    <!--FOOTER-->
+    </header>
+    <main class="main_container">
+        <section sec1_container>
+            <div>
+                <p class="titulo">Novedades</p>
+                <div class="banner_container">
+                    <img class="slide active" src="imagenes/libro 1.jpg" alt="Libro Can't hurt me">
+                    <img class="slide" src="imagenes/libro 2.jpg" alt="Trilogía Las chicas del zodiaco">
+                    <img class="slide" src="imagenes/libro 3.jpg" alt="Libro La espada de la asesina">
+                    <img class="slide" src="imagenes/libro 4.jpg" alt="Libro Megan Maxwell ¿y si lo probamos...?">
+                </div>
+            </div>
+<!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
+        </section>
+
+
+        <div class="titulo_container">
+            <p class="titulo nov">Recomendados</p>
+        </div>
+        <span class="librosf1_container">
+           <img class="caja" src="imagenes/libroej1.jpg">
+           <img class="caja" src="imagenes/libroeje2.jpg">
+           <img class="caja" src="imagenes/libroeje3.jpg">
+           <img class="caja" src="imagenes/libroeje4.jpg">
+        </span>
+        <span class="librosf1_container">
+            <img class="caja" src="imagenes/libroeje5.jpg">
+            <img class="caja" src="imagenes/libroeje6.jpeg">
+            <img class="caja" src="imagenes/libroeje7.jpg">
+            <img class="caja" src="imagenes/libroeje8.jpg">
+         </span>
+         <span class="librosf1_container">
+            <img class="caja" src="imagenes/libroeje9.jpg">
+         </span>
+
+    </main>
     <footer>
-        <hr>
-        <p>Aca va un footer lindo</p>
+        <img class="footer_logo" src="imagenes/logo.jpg">
+        <p class="comit">Traemos libros, cómics y mangas nuevos e importados a pedido</p>
+        <p class="copyright">Copywrite LogiaLibros Comics - 2023</p>
+        <span style="font-size: 48px; color: Dodgerblue;">
+            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+        </span>
+        <span style="font-size: 48px; color: rgb(0, 0, 0);">
+            <a href="https://www.instagram.com/logialibros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </span>
     </footer>
 </body>
-
 </html>
