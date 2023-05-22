@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logia Libros - Catálogo</title>
-    <!--FONTS AWESOME-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--FONT ROBOTO-->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
-        rel="stylesheet">
-    <!--CSS-->
-    <link href="styles.css" rel="stylesheet"> 
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap">
+    <script src="https://kit.fontawesome.com/578634473c.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header class="head_container">
         <img class="head_logo" src="imagenes/logo.jpg" alt="Logo de Logia Comics">
@@ -28,8 +25,8 @@
                 <li class="menu"><a href="catalogo.html">Catálogo</a></li>
                 <li class="menu"><a href="contacto.html">Contacto</a></li>
                 <li class="menu"><a href="faq.html">FAQ</a></li>
-                <li class="icono"><a href="#"><i class="fas fa-solid fa-regular fa-magnifying-glass"></i></a></li>
-                <li class="icono"><a href="#"><i class="fas fa-solid fa-regular fa-cart-shopping"></i></a></li>
+                <li class="icono"><a href="#"><i class="material-icons">search</i></a></li>
+                <li class="icono"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
             </ul>
         </nav>
     </header>
@@ -47,26 +44,45 @@
 <!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
         </section>
 
-
-        <div class="titulo_container">
-            <p class="titulo nov">Recomendados</p>
-        </div>
-        <span class="librosf1_container">
-           <img class="caja" src="imagenes/libroej1.jpg">
-           <img class="caja" src="imagenes/libroeje2.jpg">
-           <img class="caja" src="imagenes/libroeje3.jpg">
-           <img class="caja" src="imagenes/libroeje4.jpg">
-        </span>
-        <span class="librosf1_container">
-            <img class="caja" src="imagenes/libroeje5.jpg">
-            <img class="caja" src="imagenes/libroeje6.jpeg">
-            <img class="caja" src="imagenes/libroeje7.jpg">
-            <img class="caja" src="imagenes/libroeje8.jpg">
-         </span>
-         <span class="librosf1_container">
-            <img class="caja" src="imagenes/libroeje9.jpg">
-         </span>
-
+        <section class="sec1_container">
+            <div class="titulo_container">
+              <p class="titulo">Recomendados</p>
+            </div>
+            <div class="librosf1_container">
+              <div class="caja">
+                <img class="imagen" src="imagenes/libroej1.jpg" alt="Libro recomendado 1">
+                <p>Texto del libro recomendado 1</p>
+                <button>Ver reseña</button>
+              </div>
+              <div class="caja">
+                <img src="imagenes/libroeje2.jpg" alt="Libro recomendado 2">
+                <p>Texto del libro recomendado 2</p>
+                <button>Ver reseña</button>
+              </div>
+              <!-- Agrega más imágenes con la clase "caja" aquí -->
+            </div>
+            <div class="librosf1_container">
+              <div class="caja">
+                <img src="imagenes/libroeje3.jpg" alt="Libro recomendado 3">
+                <p>Texto del libro recomendado 3</p>
+                <button>Ver reseña</button>
+              </div>
+              <div class="caja">
+                <img src="imagenes/libroeje4.jpg" alt="Libro recomendado 4">
+                <p>Texto del libro recomendado 4</p>
+                <button>Ver reseña</button>
+              </div>
+              <!-- Agrega más imágenes con la clase "caja" aquí -->
+            </div>
+            <div class="librosf1_container">
+              <div class="caja">
+                <img src="imagenes/libroeje5.jpg" alt="Libro recomendado 5">
+                <p>Texto del libro recomendado 5</p>
+                <button>Ver reseña</button>
+              </div>
+              <!-- Agrega más imágenes con la clase "caja" aquí -->
+            </div>
+          </section>
     </main>
     <footer>
         <img class="footer_logo" src="imagenes/logo.jpg">
