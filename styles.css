@@ -445,6 +445,24 @@ footer{
   .menu{
       font-size: 2rem;
   }
+   .menu.home :hover{
+    background-color: initial;
+    color: unset;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .menu :hover{
+    text-decoration: none;
+  }
+   .icono :hover{
+    transform: unset;
+  }
+  .icono :active{
+    background-color: #4A09ED;
+  }
+   * {
+    box-sizing:content-box;
   .libros{
     padding-left: 1.1rem;
     padding-right: 1.1rem;
