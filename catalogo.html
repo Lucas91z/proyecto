@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logia Libros - Catálogo</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--FONTS AWESOME-->
+    <link rel="icon" type="image/png" href="favicon-16x16.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <!--FONT ROBOTO-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">    
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap">
-    <script src="https://kit.fontawesome.com/578634473c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
+        rel="stylesheet">
+    <!--CSS-->
+    <link href="styles.css" rel="stylesheet">  
+    <!--API-->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
     <header class="head_container">
@@ -41,7 +45,17 @@
                     <img class="slide" src="imagenes/libro 4.jpg" alt="Libro Megan Maxwell ¿y si lo probamos...?">
                 </div>
             </div>
-<!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
+            <!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
+        </section>
+        <section class="busca">
+            <div class="buscador">
+            <label for="titulo-libro"><h2>Busca tu libro favorito:</h2></label>
+            <input type="text" id="titulo-libro" placeholder="Ingresa el título...">
+            <button id="buscar-libro">Buscar</button>
+            <div class="resultados-cont">
+            <div id="resultados"></div>
+        </div>
+        </div>
         </section>
 
         <section class="sec1_container">
@@ -83,17 +97,40 @@
               <!-- Agrega más imágenes con la clase "caja" aquí -->
             </div>
           </section>
+
+        <div class="titulo_container">
+            <p class="titulo nov">Recomendados</p>
+        </div>
+        <span class="librosf1_container">
+            <img class="caja" src="imagenes/libroej1.jpg">
+            <img class="caja" src="imagenes/libroeje2.jpg">
+            <img class="caja" src="imagenes/libroeje3.jpg">
+            <img class="caja" src="imagenes/libroeje4.jpg">
+        </span>
+        <span class="librosf1_container">
+            <img class="caja" src="imagenes/libroeje5.jpg">
+            <img class="caja" src="imagenes/libroeje6.jpeg">
+            <img class="caja" src="imagenes/libroeje7.jpg">
+            <img class="caja" src="imagenes/libroeje8.jpg">
+        </span>
+        <span class="librosf1_container">
+            <img class="caja" src="imagenes/libroeje9.jpg">
+        </span>
+
     </main>
     <footer>
         <img class="footer_logo" src="imagenes/logo.jpg">
         <p class="comit">Traemos libros, cómics y mangas nuevos e importados a pedido</p>
         <p class="copyright">Copywrite LogiaLibros Comics - 2023</p>
         <span style="font-size: 48px; color: Dodgerblue;">
-            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i
+                    class="fa-brands fa-square-facebook "></i></a>
         </span>
         <span style="font-size: 48px; color: rgb(0, 0, 0);">
             <a href="https://www.instagram.com/logialibros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </span>
-    </footer>
+    </footer>    
+    
 </body>
+
 </html>
