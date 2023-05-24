@@ -282,6 +282,7 @@ button:active {
   align-content: space-between;
   background-color: bisque;
   background: #b09dc2;
+  box-shadow: 10px 10px 60px 20px rgba(133, 132, 132, 0.7);
 }
 
 .buscador {
