@@ -685,3 +685,9 @@ footer {
     display: block;
     margin-top: 50px;
   }
+
+  .faq {
+    border:none;
+}
+
+}
