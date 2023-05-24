@@ -272,66 +272,6 @@ button:active {
   margin: 10px 0 20px 0;
 }
 
-/*estilo catalogo*/
-.main_container {
-  background-color: bisque;
-  background: linear-gradient(to bottom, rgb(225, 228, 196) 0%, rgb(180, 183, 162) 100%);
-  padding-bottom: 2rem;
-  margin-top: 40px;
-}
-
-.titulo {
-  font-size: 45px;
-  font-weight: bold;
-  font-style: italic;
-  padding: 1.1rem;
-  color: black;
-  padding-top: 10px;
-}
-
-.sec1_container {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.banner_container {
-  height: 200px;
-  display: flex;
-  overflow: hidden;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.slide {
-  width: 100%;
-  height: 200px;
-  box-sizing: border-box;
-  transition: transform 0.5s ease-in-out;
-}
-
-.librosf1_container {
-  height: 290px;
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-
-.caja {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  border: 4px solid #c78c19;
-  border-radius: 10px;
-}
-
-.caja:hover {
-  border-width: 7px;
-}
-
-.caja:active {
-  border-color: #7723C4;
-}
-
 /* BUSCA */
 .busca {
   display: flex;
@@ -341,7 +281,7 @@ button:active {
   align-items: center;
   align-content: space-between;
   background-color: bisque;
-  background: linear-gradient(to bottom, rgb(225, 228, 196) 0%, rgb(180, 183, 162) 100%);
+  background: #b09dc2;
 }
 
 .buscador {
@@ -391,6 +331,95 @@ button {
   height: 100px;
   margin: 5px;
 }
+
+
+/*estilo catalogo*/
+.main_container{
+  background-color: bisque;
+  background: linear-gradient(to bottom, rgb(225, 228, 196) 0%, rgb(180, 183, 162) 100%);
+  padding-bottom: 2rem;
+  margin-top:40px;
+  border-color: rgb(172, 174, 151)
+}
+.titulo{
+  font-size: 45px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 1.1rem;
+  color: black;
+  padding-top: 10px;
+}
+
+.sec1_container{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner_container{
+  height: 200px;
+  display: flex;
+  overflow:hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.slide{
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  transition: transform 0.5s ease-in-out;
+}
+
+.librosf1_container{
+  height: 290px;
+  display: flex;
+  justify-content:space-around;
+  margin-top: 50px;
+}
+
+.caja{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.caja img {
+  width: 150px;
+  border: 4px solid #c78c19;
+  border-radius: 10px;
+}
+
+.caja img:hover {
+  border-width:7px;
+}
+
+.caja p {
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align:end;
+}
+
+.caja button {
+  display: inline;
+  margin: 10px auto;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #c78c19;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.caja button:active {
+  background-color: #7723C4;
+}
+
 
 /* Estilo para el formulario */
 .formulario {
@@ -537,7 +566,7 @@ h2 {
   color: #000;
 }
 
-section {
+.faq {
   background-color: #fff;
   border: 1px solid #d9d9d9;
   padding: 20px;
@@ -585,75 +614,73 @@ footer {
 
 @media screen and (max-width: 700px) {
   .head_container {
-  background-image: none;
-  background-color: #4A09ED;
-  background-image: linear-gradient(to bottom, #230063,#510459);
-  width: 100%;
-  
-  box-sizing: border-box;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  }
+    background-image: none;
+    background-color: #4A09ED;
+    background-image: linear-gradient(to bottom, #230063,#510459);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    }
   .head_logo{
-  max-width:100px;
-  }
+    max-width:100px;
+    }
   .menu{
-  font-size: 2rem;
+    font-size: 2rem;
   }
   .menu.home :hover{
-  background-color: initial;
-  color: unset;
-  font-size: 1.3rem;
-  font-weight: 600;
-  text-decoration: none;
+    background-color: initial;
+    color: unset;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
   }
   .menu :hover{
-  text-decoration: none;
+    text-decoration: none;
   }
   .icono :hover{
-  transform: unset;
+    transform: unset;
   }
   .icono :active{
-  background-color: #4A09ED;
-  }
-  
-  {
-  box-sizing:content-box;
+    box-sizing:content-box;
   }
   .libros{
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
   }
   .formulario{
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
   }
   element.style{
-  text-align: center;
+    text-align: center;
   }
   .mapa{
-  max-width: 50px;
+    max-width: 50px;
   }
   h2{
-  text-align: center;
+    text-align: center;
   }
   section{
-  border:none;
+    border:none;
   }
   .main_container{
-  background: none;
+    background: none;
   }
   .titulo{
-  text-align: center;
-  font-family: roboto;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: #b09dc2;
+    text-align: center;
+    font-family: roboto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #b09dc2;
   }
   .banner_container{
-  border: #c78c19;
+    border: #c78c19;
+  }
+  .librosf1_container {
+    height: 100%;
+    display: block;
+    margin-top: 50px;
   }
