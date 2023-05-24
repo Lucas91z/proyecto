@@ -15,8 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;1,100&display=swap"
         rel="stylesheet">
     <!--CSS-->
-    <link href="styles.css" rel="stylesheet"> 
-    
+    <link href="styles.css" rel="stylesheet">  
+    <!--API-->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -44,7 +46,17 @@
                     <img class="slide" src="imagenes/libro 4.jpg" alt="Libro Megan Maxwell ¿y si lo probamos...?">
                 </div>
             </div>
-<!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
+            <!-- Quiero hacer un banner carrusel, esos que van pasando la imagen pero no me estaría saliendo -->
+        </section>
+        <section class="busca">
+            <div class="buscador">
+            <label for="titulo-libro"><h2>Busca tu libro favorito:</h2></label>
+            <input type="text" id="titulo-libro" placeholder="Ingresa el título...">
+            <button id="buscar-libro">Buscar</button>
+            <div class="resultados-cont">
+            <div id="resultados"></div>
+        </div>
+        </div>
         </section>
 
 
@@ -52,20 +64,20 @@
             <p class="titulo nov">Recomendados</p>
         </div>
         <span class="librosf1_container">
-           <img class="caja" src="imagenes/libroej1.jpg">
-           <img class="caja" src="imagenes/libroeje2.jpg">
-           <img class="caja" src="imagenes/libroeje3.jpg">
-           <img class="caja" src="imagenes/libroeje4.jpg">
+            <img class="caja" src="imagenes/libroej1.jpg">
+            <img class="caja" src="imagenes/libroeje2.jpg">
+            <img class="caja" src="imagenes/libroeje3.jpg">
+            <img class="caja" src="imagenes/libroeje4.jpg">
         </span>
         <span class="librosf1_container">
             <img class="caja" src="imagenes/libroeje5.jpg">
             <img class="caja" src="imagenes/libroeje6.jpeg">
             <img class="caja" src="imagenes/libroeje7.jpg">
             <img class="caja" src="imagenes/libroeje8.jpg">
-         </span>
-         <span class="librosf1_container">
+        </span>
+        <span class="librosf1_container">
             <img class="caja" src="imagenes/libroeje9.jpg">
-         </span>
+        </span>
 
     </main>
     <footer>
@@ -73,11 +85,14 @@
         <p class="comit">Traemos libros, cómics y mangas nuevos e importados a pedido</p>
         <p class="copyright">Copywrite LogiaLibros Comics - 2023</p>
         <span style="font-size: 48px; color: Dodgerblue;">
-            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i class="fa-brands fa-square-facebook "></i></a>
+            <a href="https://www.facebook.com/LogiaComics1" target="_blank"><i
+                    class="fa-brands fa-square-facebook "></i></a>
         </span>
         <span style="font-size: 48px; color: rgb(0, 0, 0);">
             <a href="https://www.instagram.com/logialibros/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </span>
-    </footer>
+    </footer>    
+    
 </body>
+
 </html>

@@ -35,14 +35,14 @@ function checkInputs() {
     }
 
 }
-
+/*ERROR */
 function setErrorFor(input, message) {
     const formControl = input.parentElement;
     const small = formControl.querySelector("small");
     formControl.className = "form-control error";
     small.innerText = message;
 }
-
+/*EXITO*/
 function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = "form-control success"

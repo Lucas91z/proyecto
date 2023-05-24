@@ -332,6 +332,66 @@ button:active {
   border-color: #7723C4;
 }
 
+/* BUSCA */
+.busca {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+  background-color: bisque;
+  background: linear-gradient(to bottom, rgb(225, 228, 196) 0%, rgb(180, 183, 162) 100%);
+}
+
+.buscador {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+label {
+  flex-basis: 30%;
+  margin-right: 10px;
+  text-align: top ;  
+}
+
+input {
+  flex-basis: 40%;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  flex-basis: 30%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.titulo-libro {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.resultados-cont {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin-top: 20px;
+}
+
+.resultados {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
 /* Estilo para el formulario */
 .formulario {
   display: flex;
